@@ -39,7 +39,7 @@ const HomeProducts = () => {
                     <button class="mx-auto  text-black font-bold  px-4 py-3 border-solid border-[1px] border-white-200  
    hover:border-none   rounded-none 
    hover:bg-green-600  duration-700" >
-                        All Products
+                       Show All Products
                     </button>
                 </div>
             </Link>
