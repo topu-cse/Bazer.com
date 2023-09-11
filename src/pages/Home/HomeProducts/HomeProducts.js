@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { shopData } from '../../../components/data/shopData'
 import { Link } from 'react-router-dom';
+import ProductsCart from './ProductsCart';
+import CartProduct from './CartProduct';
 const HomeProducts = () => {
 
     const [food, setfood] = useState(shopData)
+    const [modalproducts, setModalProducts] = useState(null);
 
     const sliceFood = food.slice(0, 8)
     return (
@@ -16,19 +19,20 @@ const HomeProducts = () => {
             <div>
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-[40px] lg:px-[100px] ' >
                     {
-                        sliceFood.map((f) => (
-                             <Link key={f.id} className='  cart shadow-lg hover:scale-105 duration-300 mt-[30px] pb-[10px]'>
-                             <div  >
-                                <img className='' src={f.img} alt="" />
-                                <div className='pt-7 text-center'>
-                                    <p>{f.name}</p>
-                                    <p className='font-bold'>Prise: ${f.price}</p>
+                        sliceFood.map((product) => (
 
-                                </div>
-                            </div>
-                             </Link>
+                            <ProductsCart
+                                key={product.id}
+                                product={product}
+                                setModalProducts={setModalProducts}
+                            />
+
                         ))
                     }
+
+                    <CartProduct
+                        modalproducts={modalproducts}
+                    />
                 </div>
 
 
@@ -41,7 +45,7 @@ const HomeProducts = () => {
                     <button class="mx-auto  text-black font-bold  px-4 py-3 border-solid border-[1px] border-white-200  
    hover:border-none   rounded-none 
    hover:bg-green-600  duration-700" >
-                       Show All Products
+                        Show All Products
                     </button>
                 </div>
             </Link>
