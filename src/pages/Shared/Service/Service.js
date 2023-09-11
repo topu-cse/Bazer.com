@@ -28,7 +28,7 @@ const Service = () => {
                          <SiPurescript size={30}/>
                      </div>
                      <div>
-                        <h1 className='text-green-500 font-bold pb-4 italic'>24/7 Online Support</h1>
+                        <h1 className='text-green-500 font-bold pb-4 italic'>100% Pure Foods</h1>
                         <p className='text-gray-400'>Discover the best gluten & lactose free products in India at PureFoods.
                              Enjoy a range of healthy and delicious. </p>
                      </div>
@@ -39,7 +39,7 @@ const Service = () => {
                          <GrDeliver size={30}/>
                      </div>
                      <div>
-                        <h1 className='text-green-500 font-bold pb-4 italic'>24/7 Online Support</h1>
+                        <h1 className='text-green-500 font-bold pb-4 italic'>Home Delivery</h1>
                         <p className='text-gray-400'> the customer's home rather than the customer taking or collecting them from the store.</p>
                      </div>
                   </div>
