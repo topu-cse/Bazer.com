@@ -17,7 +17,8 @@ const HomeProducts = () => {
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-[40px] lg:px-[100px] ' >
                     {
                         sliceFood.map((f) => (
-                            <div key={f.id} className=' cursor-pointer cart shadow-lg hover:scale-105 duration-300 mt-[30px] pb-[10px]'>
+                             <Link key={f.id} className='  cart shadow-lg hover:scale-105 duration-300 mt-[30px] pb-[10px]'>
+                             <div  >
                                 <img className='' src={f.img} alt="" />
                                 <div className='pt-7 text-center'>
                                     <p>{f.name}</p>
@@ -25,6 +26,7 @@ const HomeProducts = () => {
 
                                 </div>
                             </div>
+                             </Link>
                         ))
                     }
                 </div>
