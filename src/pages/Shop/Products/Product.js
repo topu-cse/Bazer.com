@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { shopData } from '../../../components/data/shopData';
-import { Link } from 'react-router-dom';
+
+import Showproducts from './Showproducts';
+import CartProduct from '../../Home/HomeProducts/CartProduct';
 
 const Product = () => {
-    const [product,setProduct]=useState(shopData)
+    const [products,setProducts]=useState(shopData)
+    const [modalproducts, setModalProducts] = useState(null);
     return (
         <div className=' my-[40px] lg:my-[100px]  '>
              <div className='text-center px-[40px]'>
@@ -15,19 +18,26 @@ const Product = () => {
              
              <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mx-auto px-[40px] lg:px-[100px]'>
              {
-                        product.map((f) => (
-                             <Link key={f.id} className='  cart shadow-lg hover:scale-105 duration-300 mt-[30px] pb-[10px]'>
-                             <div  >
-                                <img className='' src={f.img} alt="" />
-                                <div className='pt-7 text-center'>
-                                    <p>{f.name}</p>
-                                    <p className='font-bold'>Prise: ${f.price}</p>
+                        products.map((product) => (
 
-                                </div>
-                            </div>
-                             </Link>
+                            //  <Link key={f.id} className='  cart shadow-lg hover:scale-105 duration-300 mt-[30px] pb-[10px]'>
+                            //  <div  >
+                            //     <img className='' src={f.img} alt="" />
+                            //     <div className='pt-7 text-center'>
+                            //         <p>{f.name}</p>
+                            //         <p className='font-bold'>Prise: ${f.price}</p>
+
+                            //     </div>
+                            // </div>
+                            //  </Link>
+
+                            <Showproducts key={product.id} product={product} setModalProducts={setModalProducts}/>
                         ))
                     }
+
+                    <CartProduct
+                    modalproducts={modalproducts}
+                    />
              </div>
         </div>
     );
