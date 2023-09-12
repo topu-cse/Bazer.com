@@ -2,11 +2,11 @@ import React from 'react';
 
 const Showproducts = ({product,setModalProducts}) => {
     return (
-        <div className='hover:scale-105 duration-300'>
+        <div className='hover:scale-105 duration-300 shadow-lg '>
             {/* Product Card */}
 
 
-            <label className='cart shadow-lg    mt-[30px] pb-[10px] cursor-pointer '
+            <label className='cart     mt-[30px] pb-[10px] cursor-pointer '
             onClick={()=>setModalProducts(product)}
              htmlFor="booking-modal">
                 <img className='' src={product.img} alt="" />
