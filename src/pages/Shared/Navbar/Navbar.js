@@ -8,7 +8,7 @@ const Navbar = () => {
     <div>
 
       {/* navbar */}
-      <div className="navbar bg-gray-900 text-white">
+      <div className="navbar bg-gray-900 text-white ">
         {/* responsive mobile */}
         <div className="navbar-start">
           <div className="dropdown">
@@ -34,8 +34,8 @@ const Navbar = () => {
         {/* laptop */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu-horizontal px-1">
-            <li className='px-2'><Link to={'/'}>Home</Link></li>
-            <Link to={'/products'} className='px-2'>Products</Link>
+            <li className='px-2  '><Link to={'/'}>Home</Link></li>
+            <li> <Link to={'/products'} className='px-2'>Products</Link></li>
             <li className='px-2'><Link to={'/about'}>About</Link></li>
           </ul>
         </div>

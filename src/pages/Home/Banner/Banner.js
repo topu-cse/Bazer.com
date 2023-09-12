@@ -13,8 +13,8 @@ const Banner = () => {
                             <p className='text-[20px] lg:text-[40px md:text-[40px]'>Healthy  <span className='text-green-500 italic'>Vegetable </span>
                              and  <span className='text-green-500 italic'>Foods </span> <br/> that you deserve to eat fresh</p>
 
-                            <button className='border-solid border-[1px] border-white-200 transition duration-700
-                             hover:border-none  text-white absolute  rounded-none mt-2
+                            <button className='border-solid border-[1px] border-green-500 transition duration-700
+                              text-white absolute  rounded-none mt-2
                               hover:bg-green-600 px-8 py-4'>EXPLORE PRODUCTS</button>
                             
                         </div>
