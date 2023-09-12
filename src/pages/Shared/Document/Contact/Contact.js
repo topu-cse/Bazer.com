@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import img2 from '../../../../assets/back/back1.jpeg'
+import ContactUs from './ContactUs';
+import ContactForm from '../../From/ContactForm';
+import Service from '../../Service/Service'
 
 const Contact = () => {
     return (
@@ -27,7 +30,9 @@ const Contact = () => {
 
             </div>
 
-            
+            <ContactUs/>
+            <ContactForm/>
+            <Service/>
         </div>
     );
 };

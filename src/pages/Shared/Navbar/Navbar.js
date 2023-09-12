@@ -68,15 +68,15 @@ const Navbar = () => {
                   <CgProfile size={30} />
                 </div>
               </label>
-              <ul tabIndex={0} className=" menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <ul tabIndex={0} className=" menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-900 rounded-box w-52">
                 <li>
-                  <a className="">
+                  <Link className="">
                     Profile
 
-                  </a>
+                  </Link>
                 </li>
-                <li><a>Settings</a></li>
-                <li><a>Logout</a></li>
+                <li><Link>Order</Link></li>
+                <li><Link to='/signin'>Sign In</Link></li>
               </ul>
             </div>
           </div>
