@@ -5,7 +5,7 @@ import img2 from '../../../assets/back/back1.jpeg'
 const ForgetPasswordForm = () => {
     return (
         <div className='mb-[100px]'>
-            {/* Sign In banner */}
+            {/* Forget password banner */}
             <div className='relative'>
                 <div>
                 <div className='absolute  w-full h-full bg-black/80 round-xl text-white '>

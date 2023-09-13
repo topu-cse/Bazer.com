@@ -7,6 +7,7 @@ import Contact from "../pages/Shared/Document/Contact/Contact";
 import SignInForm from "../pages/Shared/From/SignInForm";
 import SignUpForm from "../pages/Shared/From/SignUpForm";
 import ForgetPasswordForm from "../pages/Shared/From/ForgetPasswordForm";
+import ProfilePageForm from "../pages/Shared/From/ProfilePageForm";
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             {
                 path:'/forgetpassword',
                 element:<ForgetPasswordForm/>
+            },
+            {
+                path:'/profile',
+                element:<ProfilePageForm/>
             }
         ]
     }
