@@ -62,7 +62,7 @@ const SignInForm = () => {
         </div>
         <div className='mb-[20px]'>
             <p>If you do not Sign up? <Link to={'/signup'} className='hover:text-green-500 text-gray-400'>Please Sign Up</Link></p>
-            <Link className='hover:text-green-500 text-gray-400'>Forgot Password ?</Link>
+            <Link to={'/forgetpassword'} className='hover:text-green-500 text-gray-400'>Forgot Password ?</Link>
 
         </div>
         <div className="flex items-center justify-between">
