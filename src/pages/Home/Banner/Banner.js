@@ -3,7 +3,7 @@ import img from '../../../assets/back/back1.jpeg'
 
 const Banner = () => {
     return (
-        <div>
+        <div className='z-1'>
             <div className='relative'>
                 <div>
                     {/* overlay */}
@@ -19,7 +19,7 @@ const Banner = () => {
                             
                         </div>
                     </div>
-                    <img className='h-[460px] md:max-h-[500px] w-full object-cover ' src={img} alt="" />
+                    <img className='h-[460px] md:max-h-[500px] w-full  object-cover  ' src={img} alt="" />
                 </div>
 
             </div>
