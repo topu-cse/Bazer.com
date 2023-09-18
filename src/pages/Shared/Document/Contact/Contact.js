@@ -13,7 +13,7 @@ const Contact = () => {
             <div className='relative'>
                 <div>
                     <div className='absolute  w-full h-full bg-black/80 round-xl text-white '>
-                        <div className='absolute top-[35%] lg:left-[20%] md:left-[20%] left-[10%] mr-[30px]'>
+                        <div className='absolute top-[35%] lg:left-[20%] md:left-[20%] left-[10%] mr-[30px]' data-aos="fade-right">
                             <p className='text-green-500 italic'>Wellcome to Our company</p>
                             <h1 className='text-[40px] mt-5 my-2'>Contact Us</h1>
                             <div className='flex rtl text-end'>

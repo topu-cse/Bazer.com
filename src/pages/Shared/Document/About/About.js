@@ -12,7 +12,7 @@ const About = () => {
             <div className='relative'>
                 <div>
                     <div className='absolute  w-full h-full bg-black/80 round-xl text-white '>
-                        <div className='absolute top-[35%] lg:left-[20%] md:left-[20%] left-[10%] mr-[30px]'>
+                        <div className='absolute top-[35%] lg:left-[20%] md:left-[20%] left-[10%] mr-[30px]' data-aos="fade-right">
                             <p className='text-green-500 italic'>Wellcome to Our company</p>
                             <h1 className='text-[40px] mt-5 my-2'>About Us</h1>
                             <div className='flex rtl text-end'>
@@ -31,7 +31,7 @@ const About = () => {
 
             {/* abou shop */}
 
-            <div className='px-[40px] md:px-[100px] lg:px-[100px] my-[40px] lg:my-[100px]'>
+            <div className='px-[40px] md:px-[100px] lg:px-[100px] my-[40px] lg:my-[100px]' data-aos="fade-up">
                 <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
                     {/* img */}
                     <div className=''>

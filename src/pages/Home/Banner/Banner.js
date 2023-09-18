@@ -7,8 +7,8 @@ const Banner = () => {
             <div className='relative'>
                 <div>
                     {/* overlay */}
-                    <div className='absolute  w-full h-full bg-black/80 round-xl text-white  '>
-                        <div className='absolute top-[35%] lg:left-[20%] md:left-[20%] left-[10%] mr-[30px]'>
+                    <div className='absolute  w-full h-full bg-black/80 round-xl text-white  '   >
+                        <div className='absolute top-[35%] lg:left-[20%] md:left-[20%] left-[10%] mr-[30px]' data-aos="fade-right">
                             <p className='text-green-500 italic md:text-[30px]'>Welcome to our Shop</p>
                             <p className='text-[20px] lg:text-[40px md:text-[40px]'>Healthy  <span className='text-green-500 italic'>Vegetable </span>
                              and  <span className='text-green-500 italic'>Foods </span> <br/> that you deserve to eat fresh</p>
@@ -19,7 +19,7 @@ const Banner = () => {
                             
                         </div>
                     </div>
-                    <img className='h-[460px] md:max-h-[500px] w-full  object-cover  ' src={img} alt="" />
+                    <img className='h-[460px] md:max-h-[500px]  w-full  object-cover  ' src={img} alt="" />
                 </div>
 
             </div>

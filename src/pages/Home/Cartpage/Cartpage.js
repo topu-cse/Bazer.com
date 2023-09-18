@@ -72,11 +72,11 @@ const Cartpage = () => {
 
                   {/* total price */}
                   <div className='text-center mt-10'>
-                    <p>total price : {totalPrice()}</p>
+                    <p>Total price : {totalPrice()}</p>
                   </div>
                   <button className=' border-solid border-[1px] border-green-500 transition duration-700
                               text-black absolute  rounded-none mt-10
-                              hover:bg-green-600 px-8 py-4'>EXPLORE PRODUCTS</button>
+                              hover:bg-green-600 px-8 py-4'>Payment</button>
              </div>
         </div>
     );

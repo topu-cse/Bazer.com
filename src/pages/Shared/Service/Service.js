@@ -5,7 +5,7 @@ import {GrDeliver} from "react-icons/gr";
 
 const Service = () => {
     return (
-        <div className='mb-[80px]'>
+        <div className='mb-[80px]'data-aos="zoom-in" >
             <div className='text-center pb-8'>
                 <h1 className='text-3xl italic text-green-500 font-bold'>Why You Choose Us</h1>
             </div>

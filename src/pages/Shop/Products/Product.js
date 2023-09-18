@@ -18,7 +18,7 @@ const Product = () => {
         );
     };
     return (
-        <div className=' my-[40px] lg:my-[100px]  '>
+        <div className=' my-[40px] lg:my-[100px]' data-aos="fade-up">
              <div className='text-center px-[40px]'>
                 <h1 className='lg:text-[40px] text-[30px] text-green-500 italic font-bold'>Our Products</h1>
                 <p className='py-2 text-gray-400'> We provide best quality & fresh grocery items near your location</p>

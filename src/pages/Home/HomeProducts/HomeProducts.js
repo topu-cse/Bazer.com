@@ -10,8 +10,8 @@ const HomeProducts = () => {
 
     const sliceFood = food.slice(0, 8)
     return (
-        <div className='mb-[50px]'>
-            <div className='text-center mb-[30px] px-[40px] md:px-[40px]'>
+        <div className='mb-[50px]' data-aos="fade-up">
+            <div className='text-center mb-[30px] px-[40px] md:px-[40px]' >
                 <h3 className='text-[20px] font-bold text-green-500 italic'>Best seller grocery near you</h3>
                 <p className=' pt-2 text-gray-400'>We provide best quality & fresh grocery items near your location</p>
             </div>

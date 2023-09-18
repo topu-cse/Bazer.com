@@ -9,7 +9,7 @@ import { useCart } from '../../../components/context/Cart';
 const Navbar = () => {
   const[cart]=useCart()
   return (
-    <div>
+    <div  >
 
       {/* navbar */}
       <div className="navbar bg-gray-900 text-white ">
@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
 
         {/* laptop */}
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex"  >
           <ul className="menu-horizontal px-1">
             <li className='px-2  '><Link to={'/'}>Home</Link></li>
             <li> <Link to={'/products'} className='px-2'>Products</Link></li>

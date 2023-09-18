@@ -35,7 +35,7 @@ const TeamMember = () => {
     ]
 
     return (
-        <div className='mb-16'>
+        <div className='mb-16' data-aos="fade-up">
 
             <div className='text-center mb-[50px]'>
                 <h1 className='text-4xl font-bold text-green-500 italic'>Team Member</h1>

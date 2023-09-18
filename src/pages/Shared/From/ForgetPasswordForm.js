@@ -26,7 +26,7 @@ const ForgetPasswordForm = () => {
              </div>
 
              {/* form */}
-             <div className="w-full max-w-xl mx-auto mt-10">
+             <div className="w-full max-w-xl mx-auto mt-10" data-aos="zoom-in-up">
       <form  className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h2 className="text-2xl font-semibold mb-6">Forgot Password</h2>
         <div className="mb-4">

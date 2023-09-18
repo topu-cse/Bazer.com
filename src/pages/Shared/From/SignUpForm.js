@@ -9,7 +9,7 @@ const SignUpForm = () => {
             <div className='relative'>
                 <div>
                     <div className='absolute  w-full h-full bg-black/80 round-xl text-white '>
-                        <div className='absolute top-[35%] lg:left-[20%] md:left-[20%] left-[10%] mr-[30px]'>
+                        <div className='absolute top-[35%] lg:left-[20%] md:left-[20%] left-[10%] mr-[30px]' data-aos="fade-right">
                             <p className='text-green-500 italic'>Wellcome to Our company</p>
                             <h1 className='text-[40px] mt-5 my-2'>Sign Up</h1>
                             <div className='flex rtl text-end'>
@@ -27,7 +27,7 @@ const SignUpForm = () => {
 
 
             {/* sing up form */}
-            <div className="w-full max-w-xl mx-auto mt-10">
+            <div className="w-full max-w-xl mx-auto mt-10" data-aos="zoom-in-up">
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h2 className="text-2xl font-semibold mb-6">Sign Up</h2>
         <div className="mb-4">

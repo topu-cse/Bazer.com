@@ -21,7 +21,7 @@ const HotSales = () => {
     ]
     return (
         <div>
-            <div className='  grid md:grid-cols-3 gap-6 my-[100px] px-[40px] lg:px-[100px]'>
+            <div className='  grid md:grid-cols-3 gap-6 my-[100px] px-[40px] lg:px-[100px]' data-aos="fade-up">
                 {/* card */}
 
                       

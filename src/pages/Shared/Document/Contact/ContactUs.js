@@ -4,7 +4,7 @@ import { BsTelephonePlusFill } from 'react-icons/bs';
 import { FaAddressCard } from 'react-icons/fa';
 const ContactUs = () => {
     return (
-        <div className='my-[50px]'>
+        <div className='my-[50px]' data-aos="fade-up">
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-[40px] md:px-[40px] lg:px-[100px] gap-4 '>
                 <div className=' border-solid border-[1px] border-green-500 py-[40px]'>
                     <div className='flex justify-center items-center  '>
