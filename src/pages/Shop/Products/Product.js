@@ -44,13 +44,13 @@ const Product = () => {
 
              {/* product show */}
              
-             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mx-auto px-[40px] lg:px-[100px]'>
+             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mx-auto px-[40px] lg:px-[100px]'  >
              {
                         products.map((product) => (
 
                             
 
-                            <Showproducts key={product.id} product={product} setModalProducts={setModalProducts}/>
+                            <Showproducts key={product.id} product={product} setModalProducts={setModalProducts}  />
                         ))
                     }
 

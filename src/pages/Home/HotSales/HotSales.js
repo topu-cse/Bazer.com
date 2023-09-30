@@ -21,14 +21,14 @@ const HotSales = () => {
     ]
     return (
         <div>
-            <div className='  grid md:grid-cols-3 gap-6 my-[100px] px-[40px] lg:px-[100px]' data-aos="fade-up">
+            <div className='  grid md:grid-cols-3 gap-6 my-[100px] px-[40px] lg:px-[100px]'  >
                 {/* card */}
 
                       
                       {
                           
                         sale.map((s)=>(
-                            <Link key={s.id} className='hover:scale-105 duration-700  '>
+                            <Link key={s.id} className='hover:scale-105 duration-700  ' data-aos="fade-up">
                             <img
                         className='max-h-[160px] md:max-h-[200px] w-full object-cover '
                         src={s.img}
