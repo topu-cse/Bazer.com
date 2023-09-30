@@ -6,11 +6,11 @@ const ProductsCart = ({ product,setModalProducts }) => {
 
 
     return (
-        <div className='hover:scale-105 duration-300 shadow-lg ' data-aos="fade-up" >
+        <div className='hover:scale-105 duration-300 shadow-lg '  >
             {/* Product Card */}
 
 
-            <label className='cart    mt-[30px] pb-[10px] cursor-pointer '
+            <label className='cart    mt-[30px] pb-[10px] cursor-pointer 'data-aos="fade-up" 
             onClick={()=>setModalProducts(product)}
              htmlFor="booking-modal">
                 <img className='h-[250px] w-full  ' src={product.img} alt="" />

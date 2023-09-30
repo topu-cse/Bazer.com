@@ -28,9 +28,9 @@ const HotSales = () => {
                       {
                           
                         sale.map((s)=>(
-                            <Link key={s.id} className='hover:scale-105 duration-700  ' data-aos="fade-up">
+                            <Link key={s.id}  data-aos="fade-up">
                             <img
-                        className='max-h-[160px] md:max-h-[200px] w-full object-cover '
+                        className='max-h-[160px] md:max-h-[200px] w-full object-cover hover:scale-105 duration-700'
                         src={s.img}
                         alt='/'
                     />

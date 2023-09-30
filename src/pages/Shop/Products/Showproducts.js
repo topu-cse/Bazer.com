@@ -2,7 +2,8 @@ import React from 'react';
 
 const Showproducts = ({product,setModalProducts}) => {
     return (
-        <div className='hover:scale-105 duration-300 shadow-lg ' data-aos="fade-up">
+         <div   className='hover:scale-105 duration-300 shadow-lg '>
+            <div   data-aos="fade-up"  >
             {/* Product Card */}
 
 
@@ -19,6 +20,7 @@ const Showproducts = ({product,setModalProducts}) => {
             
             </label>
         </div>
+         </div>
     );
 };
 
