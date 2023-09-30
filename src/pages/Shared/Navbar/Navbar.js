@@ -8,7 +8,7 @@ import { useCart } from '../../../components/context/Cart';
 
 const Navbar = () => {
   const [cart] = useCart()
-  const activeLink = " text-green-500";
+  const activeLink = " text-green-500 border-b-2 border-green-500";
   const normalLink = "";
   return (
     <div  >
@@ -21,14 +21,31 @@ const Navbar = () => {
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
-            <ul tabIndex={0} className=" menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-900 rounded-box w-52">
-              <li><Link to={'/'}>Home</Link></li>
-              <li>
-                <Link to={'/products'} className='px-2'>Products</Link>
-
-              </li>
-              <li><Link to={'/about'}>About</Link></li>
-              <li><Link to={'/contact'}>Contact</Link></li>
+            <ul tabIndex={0} className=" menu-sm dropdown-content  z-[1]  shadow bg-gray-900  w-52">
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? activeLink : normalLink)}
+              >
+                <p className=" w-full h-full mx-4  centered">Home</p>
+              </NavLink>
+              <NavLink
+                to="/products"
+                className={({ isActive }) => (isActive ? activeLink : normalLink)}
+              >
+                <p className=" w-full h-full mx-4 centered">Products</p>
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? activeLink : normalLink)}
+              >
+                <p className=" w-full h-full mx-4  centered">About</p>
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => (isActive ? activeLink : normalLink)}
+              >
+                <p className=" w-full h-full mx-4  centered">contact</p>
+              </NavLink>
             </ul>
           </div>
           <Link to={'/'} className='flex lg:pl-[100px]'>
@@ -47,25 +64,25 @@ const Navbar = () => {
               to="/"
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
             >
-              <p className=" w-full h-full px-4 centered">Home</p>
+              <p className=" w-full h-full mx-4  centered">Home</p>
             </NavLink>
             <NavLink
               to="/products"
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
             >
-              <p className=" w-full h-full px-4 centered">Products</p>
+              <p className=" w-full h-full mx-4 centered">Products</p>
             </NavLink>
             <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
             >
-              <p className=" w-full h-full px-4 centered">About</p>
+              <p className=" w-full h-full mx-4  centered">About</p>
             </NavLink>
             <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
             >
-              <p className=" w-full h-full px-4 centered">contact</p>
+              <p className=" w-full h-full mx-4  centered">contact</p>
             </NavLink>
           </div>
         </section>
@@ -106,7 +123,7 @@ const Navbar = () => {
                   <CgProfile size={30} />
                 </div>
               </label>
-              <ul tabIndex={0} className=" menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-900 rounded-box w-52">
+              <ul tabIndex={0} className=" menu-sm dropdown-content  z-[1] p-2 shadow bg-gray-900  w-52">
                 <li>
                   <Link to={'profile'}>
                     Profile

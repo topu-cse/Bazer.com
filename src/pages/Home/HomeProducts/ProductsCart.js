@@ -6,7 +6,7 @@ const ProductsCart = ({ product,setModalProducts }) => {
 
 
     return (
-        <div className='hover:scale-105 duration-300 shadow-lg '  >
+        <div className='hover:scale-105 duration-300 shadow-lg ' data-aos="fade-up" >
             {/* Product Card */}
 
 

@@ -17,7 +17,7 @@ const HomeProducts = () => {
             </div>
 
             <div>
-                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-[40px] lg:px-[100px] ' data-aos="fade-up">
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-[40px] lg:px-[100px] '  >
                     {
                         sliceFood.map((product) => (
 
@@ -41,7 +41,7 @@ const HomeProducts = () => {
             </div>
 
             <Link to={'/products'}>
-                <div class="text-center mt-[70px] py-[20px]">
+                <div className="text-center mt-[70px] py-[20px]">
                     <button class="mx-auto  text-black font-bold  px-4 py-3 border-solid border-[1px] border-white-200  
    hover:border-green-500   rounded-none 
    hover:bg-green-600  duration-700" >
