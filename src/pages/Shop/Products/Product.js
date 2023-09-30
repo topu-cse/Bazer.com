@@ -5,6 +5,7 @@ import Showproducts from './Showproducts';
 import CartProduct from '../../Home/HomeProducts/CartProduct';
 
 const Product = () => {
+    
     const [products,setProducts]=useState(shopData)
     const [modalproducts, setModalProducts] = useState(null);
 
@@ -17,6 +18,8 @@ const Product = () => {
             })
         );
     };
+
+    
     return (
         <div className=' my-[40px] lg:my-[100px]' data-aos="fade-up">
              <div className='text-center px-[40px]'>
@@ -24,14 +27,18 @@ const Product = () => {
                 <p className='py-2 text-gray-400'> We provide best quality & fresh grocery items near your location</p>
              </div>
 
+
+             {/* search */}
+          
+
              {/* filter products */}
               <div className='mb-[30px]'>
             <div className='flex flex-wrap justify-center items-center py-10'>
                 <button onClick={()=>setProducts(shopData)} className=' px-4 hover:text-green-500 font-bold'>All Products</button>
-                <button onClick={()=>filterType('chips')} className='border-s-4 border-green-500 px-4 hover:text-green-500 font-bold'>Chips</button>
-                <button onClick={()=>filterType('vegetable')} className='border-s-4 border-green-500 px-4 hover:text-green-500 font-bold'> Vegetable</button>
-                <button onClick={()=>filterType('foods')} className='border-s-4 border-green-500 px-4 hover:text-green-500 font-bold'>Food</button>
-                <button onClick={()=>filterType('drinks')} className='border-s-4 border-green-500 px-4 hover:text-green-500 font-bold'>Drink</button>
+                <button onClick={()=>filterType('chips')} className='border-s-2 border-green-500 px-4 hover:text-green-500 font-bold'>Chips</button>
+                <button onClick={()=>filterType('vegetable')} className='border-s-2 border-green-500 px-4 hover:text-green-500 font-bold'> Vegetable</button>
+                <button onClick={()=>filterType('foods')} className='border-s-2 border-green-500 px-4 hover:text-green-500 font-bold'>Food</button>
+                <button onClick={()=>filterType('drinks')} className='border-s- border-green-500 px-4 hover:text-green-500 font-bold'>Drink</button>
             </div>
           </div> 
 

@@ -46,7 +46,7 @@ const Cartpage = () => {
                   <div className='mt-10'>
                     {
                         cart?.map(p=>(
-                          <div className='flex justify-between '>
+                          <div className='flex justify-between  mb-5'>
 
                             <div>
                                 <img src={p.img} alt=""  className='h-[70px]'/>
@@ -61,7 +61,7 @@ const Cartpage = () => {
                                  {p.price} TK
                             </div>
 
-                            <div className='mt-5 cursor-pointer'>
+                            <div className='mt-5 cursor-pointer hover:text-green-500  duration-300'>
                                 <TiDeleteOutline size={20} onClick={() => removeCartItem(p._id)}/>
                             </div>
                           </div>  
@@ -74,9 +74,11 @@ const Cartpage = () => {
                   <div className='text-center mt-10'>
                     <p>Total price : {totalPrice()}</p>
                   </div>
-                  <button className=' border-solid border-[1px] border-green-500 transition duration-700
-                              text-black absolute  rounded-none mt-10
+                   <div className='flex justify-center'>
+                   <button className=' border-solid border-[1px] border-green-500 transition duration-700
+                              text-black absolute  rounded-none mt-5
                               hover:bg-green-600 px-8 py-4'>Payment</button>
+                   </div>
              </div>
         </div>
     );
