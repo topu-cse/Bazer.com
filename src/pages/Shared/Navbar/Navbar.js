@@ -8,13 +8,13 @@ import { useCart } from '../../../components/context/Cart';
 
 const Navbar = () => {
   const [cart] = useCart()
-  const activeLink = " text-green-500 border-b-2 border-green-500";
+  const activeLink = " text-green-500 border-b-2 border-green-500 ";
   const normalLink = "";
   return (
     <div  >
 
       {/* navbar */}
-      <div className="navbar bg-gray-900 text-white ">
+      <div className="navbar bg-gray-900 text-white  ">
         {/* responsive mobile */}
         <div className="navbar-start">
           <div className="dropdown">
@@ -59,7 +59,7 @@ const Navbar = () => {
 
 
         <section>
-          <div className="navbar-center hidden lg:flex">
+          <div className="navbar-center hidden lg:flex  ">
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
